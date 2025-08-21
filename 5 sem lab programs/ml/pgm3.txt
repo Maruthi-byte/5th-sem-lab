@@ -1,0 +1,4 @@
+install.packages("tidyverse") 
+library(tidyverse) 
+data <- tibble(A = c(1, 2, 3), B = c(4, 5, 6)) 
+print(data) 

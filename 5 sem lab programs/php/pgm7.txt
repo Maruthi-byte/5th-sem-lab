@@ -1,0 +1,23 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+$fullname = $_POST['fullname']; 
+$username = $_POST['username']; 
+$password = $_POST['password'];  // In real apps, NEVER display or store plain 
+passwords 
+$gender   = $_POST['gender']; 
+$country  = $_POST['country']; 
+$hobbies  = isset($_POST['hobbies']) ? $_POST['hobbies'] : []; 
+echo "<h2>User Registration Details</h2>"; 
+echo "Full Name: $fullname<br>"; 
+echo "Username: $username<br>"; 
+echo "Gender: $gender<br>"; 
+echo "Hobbies: "; 
+echo "Password: ****** (hidden)<br>"; // Hide actual password 
+echo "Country: $country<br>"; 
+if (!empty($hobbies)) { 
+echo implode(", ", $hobbies); 
+} else { 
+echo "None"; 
+} 
+} 
+?>

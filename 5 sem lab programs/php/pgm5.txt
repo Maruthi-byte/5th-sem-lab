@@ -1,0 +1,34 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+$name = $_POST['name']; 
+$roll = $_POST['roll']; 
+$maths = $_POST['maths']; 
+$science = $_POST['science']; 
+$english = $_POST['english']; 
+$total = $maths + $science + $english; 
+$average = $total / 3; 
+echo "<h3>Student Marks List</h3>"; 
+echo "Name: $name<br>"; 
+echo "Roll No: $roll<br>"; 
+ echo "Maths: $maths<br>"; 
+    echo "Science: $science<br>"; 
+    echo "English: $english<br>"; 
+    echo "<strong>Total Marks: $total</strong><br>"; 
+    echo "<strong>Average Marks: " . number_format($average, 2) . "</strong><br>"; 
+ 
+    // Optional: Grade 
+    if ($average >= 90) { 
+        $grade = "A+"; 
+    } elseif ($average >= 75) { 
+        $grade = "A"; 
+    } elseif ($average >= 60) { 
+        $grade = "B"; 
+    } elseif ($average >= 40) { 
+        $grade = "C"; 
+    } else { 
+        $grade = "Fail"; 
+    } 
+ 
+    echo "<strong>Grade: $grade</strong>"; 
+} 
+?>

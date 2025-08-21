@@ -1,0 +1,9 @@
+# Load built-in dataset 
+data(mtcars) 
+# Fit linear regression model 
+model <- lm(mpg ~ wt, data = mtcars) 
+# View model summary 
+summary(model) 
+# Predict mpg for new weight values 
+new_weights <- data.frame(wt = c(2.5, 3.0, 3.5)) 
+predict(model, new_weights)

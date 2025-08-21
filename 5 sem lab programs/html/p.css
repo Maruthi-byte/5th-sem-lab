@@ -1,0 +1,20 @@
+h1 {
+  border: groove;
+  background-color: #ffface;
+  text-align: center;
+  color: green;
+}
+h2 {
+  border: ridge;
+  background-color: red;
+  text-align: left;
+  color: green;
+}
+
+
+p {
+  border: dotted;
+  background-color: pink;
+  text-align: left;
+  color: white;
+}

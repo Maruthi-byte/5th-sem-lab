@@ -1,0 +1,21 @@
+<?php 
+// Check if the cookie exists 
+if (isset($_COOKIE['visit_count'])) { 
+ 
+ 
+18 
+PHP-MySQL - III B.Sc(CS-Major/Minor) 
+ 
+    // Read current value and increment 
+    $visitCount = $_COOKIE['visit_count'] + 1; 
+} else { 
+    // First visit 
+    $visitCount = 1; 
+} 
+ 
+// Set/update the cookie with the new value (expires in 1 hour) 
+setcookie('visit_count', $visitCount, time() + 3600); 
+ 
+echo "<h2>Page Visit Counter</h2>"; 
+echo "You have visited this page <strong>$visitCount</strong> times."; 
+?> 

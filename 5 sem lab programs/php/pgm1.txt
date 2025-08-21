@@ -1,0 +1,15 @@
+<?php 
+// Indexed Array 
+$colors = ["Red", "Green", "Blue"]; 
+print("<b>Indexed array elements</b> <br>"); 
+foreach($colors as $value){ 
+echo $value."<br> "; 
+} 
+// Associative Array 
+$person = ["name" => "Raju", "age" => 24]; 
+print("<b>Associate array elements</b> <br>"); 
+foreach($person as $key =>$value){ 
+echo $key."=>". $value; 
+echo "<br>"; 
+} 
+?>

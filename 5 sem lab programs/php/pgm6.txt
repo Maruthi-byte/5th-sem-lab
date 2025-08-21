@@ -1,0 +1,19 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+$name   = $_POST['name']; 
+$email  = $_POST['email']; 
+$gender = $_POST['gender']; 
+$course = $_POST['course']; 
+$hobbies = isset($_POST['hobbies']) ? $_POST['hobbies'] : []; 
+echo "<h2>Student Registration Details</h2>"; 
+echo "Name: $name<br>"; 
+echo "Email: $email<br>"; 
+echo "Gender: $gender<br>"; 
+echo "Course: $course<br>"; 
+echo "Hobbies: "; 
+if (!empty($hobbies)) { 
+echo implode(", ", $hobbies); 
+} else { echo "None";
+} 
+} 
+?> 

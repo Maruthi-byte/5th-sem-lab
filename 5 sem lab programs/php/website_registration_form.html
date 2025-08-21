@@ -1,0 +1,29 @@
+<head> 
+<title>Website Registration Form</title> 
+</head> 
+<body> 
+<h2>Website Registration Form</h2> 
+<form method="post" action="registration_output.php"> 
+Full Name: <input type="text" name="fullname" required><br><br> 
+Username: <input type="text" name="username" required><br><br> 
+Password: <input type="password" name="password" required><br><br> 
+Gender:<br> 
+<input type="radio" name="gender" value="Male" required> Male<br> 
+<input type="radio" name="gender" value="Female"> Female<br><br> 
+Select Your Country: 
+<select name="country" required> 
+<option value="">--Select--</option> 
+<option value="India">India</option> 
+<option value="USA">USA</option> 
+<option value="UK">UK</option> 
+<option value="Canada">Canada</option> 
+</select><br><br> 
+Hobbies:<br> 
+<input type="checkbox" name="hobbies[]" value="Reading"> Reading<br> 
+<input type="checkbox" name="hobbies[]" value="Traveling"> Traveling<br> 
+<input type="checkbox" name="hobbies[]" value="Gaming"> Gaming<br> 
+<input type="checkbox" name="hobbies[]" value="Cooking"> Cooking<br><br> 
+<input type="submit" value="Register"> 
+</form> 
+</body> 
+</html>

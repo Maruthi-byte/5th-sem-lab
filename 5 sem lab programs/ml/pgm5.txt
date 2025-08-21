@@ -1,0 +1,6 @@
+install.packages("dplyr") 
+library(dplyr) 
+data(iris) 
+head(iris) 
+iris %>% 
+summarise(across(where(is.numeric), ~mean(., na.rm = TRUE)))

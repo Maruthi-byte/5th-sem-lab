@@ -1,0 +1,4 @@
+data(iris) 
+iris_data <- iris[, 1:4]  # Remove species 
+km <- kmeans(iris_data, centers = 3) 
+table(iris$Species, km$cluster)

@@ -1,0 +1,3 @@
+data(mtcars) 
+model <- lm(mpg ~ wt, data = mtcars) 
+summary(model)

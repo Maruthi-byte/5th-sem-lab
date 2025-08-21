@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Recursion</title>
+</head>
+<body>
+<script>
+var n, f;
+n = parseInt(prompt("Enter a number", "0"));
+
+function fact(n) {
+  if (n == 0)
+    return 1;
+  else
+    return n * fact(n - 1);
+}
+
+f = fact(n);
+document.writeln("Factorial of given number = " + f);
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?php 
+// Number of terms to display 
+$n = 10; 
+// First two terms 
+$f1 = 0; 
+$f2 = 1; 
+echo "Fibonacci Series up to $n terms:<br>"; 
+for ($i = 1; $i <= $n; $i++) { 
+echo $f1 . " "; 
+// Calculate next term 
+$next = $f1 + $f2; 
+$f1 = $f2; 
+$f2 = $next; 
+} 
+?> 

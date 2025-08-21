@@ -1,0 +1,14 @@
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $name = $_POST['emp_name']; 
+    $id = $_POST['emp_id']; 
+    $dept = $_POST['emp_dept']; 
+    $salary = $_POST['emp_salary']; 
+ 
+    echo "<h3>Employee Details</h3>"; 
+    echo "Name: $name<br>"; 
+    echo "ID: $id<br>"; 
+    echo "Department: $dept<br>"; 
+    echo "Salary: ₹$salary<br>"; 
+} 
+?>

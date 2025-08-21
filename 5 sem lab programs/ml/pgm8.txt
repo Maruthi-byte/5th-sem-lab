@@ -1,0 +1,11 @@
+# Install and load the rpart package (if not already installed) 
+install.packages("rpart") 
+library(rpart) 
+# Load iris data 
+data(iris) 
+# Create decision tree model 
+tree_model <- rpart(Species ~ ., data = iris, method = "class") 
+# Predict species for first 5 samples 
+predictions <- predict(tree_model, iris[1:5, ], type = "class") 
+# Show predictions 
+print(predictions)

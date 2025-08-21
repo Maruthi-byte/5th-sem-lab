@@ -1,0 +1,12 @@
+# Load dataset 
+data(iris) 
+# Select features 
+features <- iris[, 1:4] 
+# Apply k-means clustering 
+result <- kmeans(features, centers = 3) 
+# View clustering result 
+table(result$cluster) 
+# Add cluster info to iris 
+iris$Cluster <- result$cluster 
+# View first few rows 
+head(iris)

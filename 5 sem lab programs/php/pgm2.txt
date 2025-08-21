@@ -1,0 +1,6 @@
+<?php 
+// Set timezone if needed (optional) 
+date_default_timezone_set("Asia/Kolkata"); 
+// Display today's date 
+echo "Today's Date: " . date("d-m-Y");
+?>

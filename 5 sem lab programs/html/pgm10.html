@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Swap Two Numbers</title>
+</head>
+<body>
+<script>
+var a, b;
+a = parseInt(prompt("Enter a value", "0"));
+b = parseInt(prompt("Enter b value", "0"));
+
+document.writeln("Before Swapping<br>");
+document.writeln("a = " + a + "<br>");
+document.writeln("b = " + b + "<br>");
+
+a = a + b;
+b = a - b;
+a = a - b;
+
+document.writeln("<br>After Swapping<br>");
+document.writeln("a = " + a + "<br>");
+document.writeln("b = " + b);
+</script>
+</body>
+</html>

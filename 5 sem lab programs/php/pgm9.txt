@@ -1,0 +1,17 @@
+<?php 
+// Step 1: Define MySQL server connection parameters 
+$servername = "localhost";   // or IP address, e.g., "127.0.0.1" 
+$username = "root";          // replace with your MySQL username 
+$password = "";              // replace with your MySQL password 
+$database = "testdb";        // replace with your database name 
+ 
+// Step 2: Create connection 
+$conn = mysqli_connect($servername, $username, $password, $database); 
+ 
+// Step 3: Check connection 
+if (!$conn) { 
+    die("Connection failed: " . mysqli_connect_error()); 
+} 
+ 
+echo "Connected successfully to MySQL database!"; 
+?>

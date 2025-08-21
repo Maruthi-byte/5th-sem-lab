@@ -1,0 +1,6 @@
+library(rpart) 
+data(iris) 
+model <- rpart(Species ~ ., data = iris, method = "class") 
+print(model) 
+plot(model) 
+text(model, use.n=TRUE)
