@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAO's ENGLISH MEDIUM HIGH SCHOOL</title>
+  <link rel="icon" type="image/jpeg" href="pic.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 60px;
+      width: auto;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 8px;
+    }
+    ul {
+      list-style-type: square;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="pic.jpg" alt="School Logo">
+    <h1>EDUCATION WITH ELEGANCE</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="academics.php">Academics</a>
+      <a href="contact.php">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>Our school is committed to excellence in education and holistic development.</p>
+  </section>
+
+  <section>
+    <h2>Highlights</h2>
+    <ul>
+      <li>100% pass rate</li>
+      <li>Modern labs and library</li>
+      <li>Annual cultural fest</li>
+    </ul>
+  </section>
+
+</body>
+</html>
